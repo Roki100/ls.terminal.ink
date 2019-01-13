@@ -1,0 +1,14 @@
+.ls-container {
+  @media screen {
+    margin: 5px;
+    background-color: $tertiary-background;
+
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media print {
+  
+  }
+}

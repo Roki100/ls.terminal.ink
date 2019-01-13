@@ -1,0 +1,12 @@
+.ls-bot-container {
+  display: flex;
+  flex-wrap: wrap;
+  .avatar {
+    width: 128px;
+    height: 128px;
+  }
+
+  .right {
+    margin-left: auto;
+  }
+}

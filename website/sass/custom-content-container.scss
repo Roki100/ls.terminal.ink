@@ -1,0 +1,21 @@
+.ls-custom-content-container {
+  .ls-custom-content {
+    overflow: hidden;
+    height: 150px;
+  }
+
+  .ls-custom-content-button {
+    text-align: center;
+    background-color: #333;
+    width: 100%;
+    box-sizing: content-box;
+    margin-top: 2em;
+    p {
+      margin-bottom: 0;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

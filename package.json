@@ -7,6 +7,7 @@
     "test": "eslint .",
     "start": "node --icu-data-dir=node_modules/full-icu website/index.js",
     "bot": "node --icu-data-dir=node_modules/full-icu bot/index.js",
+    "terminal": "terminal/index.js",
     "sass": "sass --watch src/static/css/"
   },
   "repository": {

@@ -1,6 +1,6 @@
 <!--
   ls.terminal.ink
-  Copyright (C) 2018 Terminal.ink
+  Copyright (C) 2019 Terminal.ink
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU Affero General Public License as published by
@@ -20,16 +20,14 @@
   <head>
     {{> head avatar=avatar title=title description=description url=url languages=languages}}
   </head>
-  <body class="ls-bots-layout">
+  <body>
     {{> intro cover=cover }}
-    <div class="main-window">
+    <div class="ls-main">
       {{> navigation }}
-      {{> search query=query }}
-      <div class="ls-container">
+      <div class="ls-contents modesta">
         {{{body}}}
       </div>
       {{> footer}}
     </div>
-    <script src="/js/navbar.js"></script>
   </body>
 </html>

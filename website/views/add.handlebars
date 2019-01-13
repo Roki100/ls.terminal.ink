@@ -5,7 +5,7 @@
       <h1>{{ i18n __ "pages.edit.title"}}</h1>
       <p>{{ i18n __ "pages.edit.required"}}</p>
     </div>
-    <div class="ls-main-content container box-shadow ls-round">
+    <div class="ls-container">
       <h2>{{ i18n __ "pages.edit.basicinfo"}}</h2>
       <div class="row">
         <div class="one-half column">
@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="ls-main-content container box-shadow ls-round">
+    <div class="ls-container">
       <h2>{{ i18n __ "pages.edit.images.title"}}</h2>
       <div class="row">
         <div class="one-half column">
@@ -94,7 +94,7 @@
       </div>
       {{> listinput name="bot.images.preview[]" label="pages.edit.images.preview.title" placeholder="pages.edit.images.preview.placeholder" add="pages.edit.images.preview.add" value=item.images.preview}}
     </div>
-    <div class="ls-main-content container box-shadow ls-round">
+    <div class="ls-container">
       <h2>{{ i18n __ "pages.edit.triggermethods"}}</h2>
       {{> listinput name="bot.trigger.prefix[]" label="pages.edit.prefix.title" placeholder="pages.edit.prefix.placeholder" add="pages.edit.prefix.add" value=item.trigger.prefix required=true}}
       <div class="row">
@@ -108,7 +108,7 @@
         </div>
       </div>
     </div>
-    <div class="ls-main-content container box-shadow ls-round">
+    <div class="ls-container">
       <h2>{{ i18n __ "pages.edit.flags.title"}}</h2>
       <div class="row">
         <div class="one-half column">
@@ -123,7 +123,7 @@
         </div>
       </div>
     </div>
-    <div class="ls-main-content container box-shadow ls-round">
+    <div class="ls-container">
       <h2>{{ i18n __ "pages.edit.sourcecode"}}</h2>
       <div class="row">
         <div class="one-half column">
@@ -136,7 +136,7 @@
         </div>
       </div>
     </div>
-    <div class="ls-main-content container box-shadow ls-round">
+    <div class="ls-container">
       <h2>{{ i18n __ "pages.edit.information"}}</h2>
       <p>{{ i18n __ "pages.edit.languages.modal"}}</p>
       <div class="row">
@@ -156,7 +156,7 @@
     </div>
     <div id="languages-box" data-delete="{{i18n __ "pages.edit.deleteLanguage"}}" data-name="{{i18n __ "pages.edit.name.title"}}" data-description="{{i18n __ "pages.edit.description.title"}}" data-page="{{i18n __ "pages.edit.page.title"}}">
       {{#each item.contents}}
-        <div class="ls-main-content container box-shadow ls-round github" data-title="{{i18n ../__ (concat "locales." @key)}}" id="{{@key}}">
+        <div class="ls-container github" data-title="{{i18n ../__ (concat "locales." @key)}}" id="{{@key}}">
           <div class="ls-flex-row">
             <h3>{{i18n ../__ (concat "locales." @key)}}</h3>
             <button type="button" onclick="deleteLanguage('{{@key}}')" class="ls-button">
@@ -174,9 +174,9 @@
       {{/each}}
     </div>
     <div class="container">
-      <button class="btn white black-text">{{ i18n __ "forms.submit"}}</button>
+      <button class="btn white-flat black-text">{{ i18n __ "forms.submit"}}</button>
     </div>
-    <div class="ls-main-content container box-shadow ls-round secondary" id="form-message" data-wait="{{ i18n __ "forms.wait" }}">
+    <div class="ls-container secondary" id="form-message" data-wait="{{ i18n __ "forms.wait" }}">
       {{ i18n __ "pages.edit.updates"}}
     </div>
   </form>
@@ -287,8 +287,8 @@
       <div class="one-third column"><label class="inline left" for="MANAGE_EMOJIS">{{i18n __ "permission.MANAGE_EMOJIS"}}</label>
       <input id="MANAGE_EMOJIS" type="checkbox" name="MANAGE_EMOJIS"/></div>
     </div>
-    <a class="btn white black-text ls-exit-modal">{{i18n __ "forms.close"}}</a>
-    <a class="btn white black-text ls-exit-modal" onclick="generatePermissions()">{{i18n __ "forms.apply"}}</a>
+    <a class="btn white-flat black-text ls-exit-modal">{{i18n __ "forms.close"}}</a>
+    <a class="btn white-flat black-text ls-exit-modal" onclick="generatePermissions()">{{i18n __ "forms.apply"}}</a>
   </div>
 </div>
 

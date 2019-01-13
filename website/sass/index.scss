@@ -1,106 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import 'navigation';
+@import 'container';
+@import 'colours';
+@import 'background';
+@import 'bot-container';
+@import 'custom-content-container';
+@import 'reviews-container';
+@import '../www-root/ModestaCSS/scss/twemoji.scss';
+
+html, body {
+  font-family: Montserrat;
+  margin: 0;
+}
+
+.emoji {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1em 1em;
+  display: inline-block;
+  height: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -.1em;
+  width: 1em;
+}
+
+// Unmodesta
+.btn, button {
+  border-radius: 0px !important;
+  box-shadow: unset !important;
+}
+
+.hidden {
+  display: none;
+}
+
 @media screen {
-  @import '../www-root/ModestaCSS/scss/modesta.scss';
-  @import '../www-root/ModestaCSS/scss/twemoji.scss';
   @import '../../node_modules/tiny-slider/src/tiny-slider.scss';
 
-  .ls-print {
-    display: none;
+  html, body {
+    color: $primary;
+    background-color: $primary-background;
   }
 
-  .main-window {
-    height: 100vh;
-  }
+  a {
+    text-decoration: unset;
+    &:link {
+      color: $link;
+    }
 
-  pre {
-    overflow-x: auto;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .ls-main-content {
-    background-color: #222;
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-
-  .ls-wrap {
-    flex-wrap: wrap;
-  }
-
-  .ls-center {
-    text-align: center;
-  }
-
-  .modal {
-    z-index: 200;
-    padding-bottom: 100px;
-    box-sizing: border-box;
-    img {
-      max-width: 100%;
+    &:visited, &:hover, &:active {
+      color: $link-clicked
     }
   }
 
-  .ls-left-pad *:not(:first-child) {
-    margin-left: 10px;
-  }
-
-  .ls-round {
-    border-radius: 6px;
-  }
-
-  .ls-center {
-    text-align: center;
-  }
-
-  .ls-no-wrap {
-    white-space: nowrap;
-  }
-
-  .ls-kiosk-layout {
-    .ls-nav-container, .ls-footer, .card-content {
-      pointer-events: none;
-    }
-  }
-
-  .table-container table {
-    max-width: unset;
-    white-space: unset;
-  }
-
-  code {
-    font-family: 'Courier New', Courier, monospace;
+  .modesta {
+    @import '../www-root/ModestaCSS/scss/modesta.scss';
   }
 }
 
 @media print {
-  html, body {
-    font-family: 'Montserrat', sans-serif;
-  }
 
-  .ls-screen {
-    display: none;
-  }
-
-  html, body {
-    color: #000;
-  }
 }
 
-.ls-flex-row {
-  display: flex;
-  &.wrap {
-    flex-wrap: wrap;
-  }
-}
-
-@import 'intro.scss';
-@import 'footer.scss';
-@import 'error.scss';
-@import 'list.scss';
-@import 'edit.scss';
-@import 'bot.scss';
-@import 'nav.scss';
-@import 'buttons.scss';
-@import 'locales.scss';

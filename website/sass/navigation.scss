@@ -1,0 +1,44 @@
+@import 'colours';
+
+.ls-navigation {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+
+  .title, .links {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .title, .links, .search {
+    align-self: center;
+  }
+
+  .links {
+    a {
+      margin-right: 5px;
+    }
+  }
+
+  .search {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    input {
+      flex-grow: 1;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  @media screen {
+    background-color: $secondary-background;
+  }
+  
+  @media print {
+  
+  }
+}

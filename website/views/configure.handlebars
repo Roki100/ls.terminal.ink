@@ -1,15 +1,15 @@
-<div class="ls-main-content container box-shadow ls-round">
+<div class="ls-container">
   <h2>{{ i18n __ "pages.configuration.token.title" }}</h2>
   <p>{{ i18n __ "pages.configuration.token.description" }}</p>
   <code>
     {{item.token}}
   </code>
   <form method="POST" action="{{languagePrefix}}/bots/{{item.id}}/token">
-    <button class="btn white black-text">{{ i18n __ "pages.configuration.renew" }}</button>
+    <button class="btn white-flat black-text">{{ i18n __ "pages.configuration.renew" }}</button>
   </form>
-  <a class="btn white black-text" href="{{links.docs}}">{{ i18n __ "pages.configuration.token.docs" }}</a>
+  <a class="btn white-flat black-text" href="{{links.docs}}">{{ i18n __ "pages.configuration.token.docs" }}</a>
 </div>
-<div class="ls-main-content container box-shadow ls-round">
+<div class="ls-container">
   <h2>{{ i18n __ "pages.configuration.hide.title" }}</h2>
   <p>{{ i18n __ "pages.configuration.hide.description" }}</p>
   <form method="POST" action="{{languagePrefix}}/bots/{{item.id}}/hide">

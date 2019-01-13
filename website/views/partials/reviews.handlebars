@@ -39,9 +39,7 @@
   {{/if}}
 </div>
 {{#each item.reviews}}
-  {{#if (isEqual @index ../limit)}}
-
-  {{else}}
+  {{#unless (isEqual @index ../limit)}}
     {{>reviewcard review=this user=../user item=../item __=../__ getLocale=../getLocale}}
-  {{/if}}
+  {{/unless}}
 {{/each}}
